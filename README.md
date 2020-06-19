@@ -13,6 +13,9 @@ Rancher (interface) :
 * go in `Apps > Launch`
 * Selectn configure and install
 
+![config01](https://github.com/weareopensource/rancher-catalog/blob/master/images/config01.png?raw=true)
+![config02](https://github.com/weareopensource/rancher-catalog/blob/master/images/config02.png?raw=true)
+
 Helm (command line) : 
 
 ```bash
