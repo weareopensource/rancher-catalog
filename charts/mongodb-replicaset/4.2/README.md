@@ -1,3 +1,5 @@
+source : https://github.com/helm/charts/tree/master/stable/mongodb-replicaset
+
 # MongoDB Helm Chart
 
 ## Prerequisites Details
