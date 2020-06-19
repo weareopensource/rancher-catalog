@@ -1,0 +1,81 @@
+categories:
+    - Database
+questions:
+  - variable: replicas
+    default: "3"
+    description: "Number of replicas in the replica set"
+    type: string
+    required: true
+    label: replicas
+  - variable: replicaSet
+    default: "rs0"
+    description: "The name of the replica set"
+    type: string
+    required: true
+    label: replicaSetName
+  - variable: port
+    default: "27017"
+    description: "MongoDB port"
+    type: string
+    required: true
+    label: port
+  - variable: persistentVolume.enabled
+    default: "true"
+    description: "If `true`, persistent volume claims are created. Require x replicas PV available in namespace."
+    type: boolean
+    required: true
+    label: persistentVolume.enabled
+  - variable: auth.enabled
+    default: "true"
+    description: "If `true`, auth is enabled."
+    type: boolean
+    required: true
+    label: auth.enabled
+    show_subquestion_if: true
+    group: "Auth"
+    subquestions:
+      - variable: auth.key
+        default: "yourkey"
+        description: "Key for internal authentication"
+        type: string
+        label: auth.key
+      - variable: auth.adminUser
+        default: "admin"
+        description: "MongoDB admin user"
+        type: string
+        label: auth.adminUser
+      - variable: auth.adminPassword
+        default: "admin"
+        description: "MongoDB admin password"
+        type: string
+        label: auth.adminPassword
+  - variable: tls.enabled
+    default: "true"
+    description: "If `true`, tls is enabled."
+    type: boolean
+    required: true
+    label: tls.enabled
+    show_subquestion_if: true
+    group: "TLS"
+    subquestions:
+      - variable: tls.mode
+        default: "requireTLS"
+        description: "Set the TLS operation mode (disabled, allowTLS, preferTLS, requireTLS)"
+        type: string
+        label: tls.mode
+      - variable: tls.cacert
+        default: "LS0tLS1CRUdJTiU ... TO COMPLETE"
+        description: "The CA certificate used for the members (openssl genrsa -out ca.key 2048 && openssl req -x509 -new -nodes -key ca.key -days 10000 -out ca.crt -subj `/CN=mydomain.com` && cat ca.cert | base64 -w0)"
+        type: multiline
+        label: tls.cacert
+      - variable: tls.cakey
+        default: "LS0tLS1CRUdJTiU ... TO COMPLETE"
+        description: "The CA key used for the members (cat ca.key | base64 -w0)"
+        type: multiline
+        label: tls.cakey
+  - variable: configmap
+    default: "storage:\n  dbPath: /data/db\nnet:\n  port: 27017\n  tls:\n    mode: requireTLS\n    CAFile: /data/configdb/tls.crt\n    certificateKeyFile: /work-dir/mongo.pem\n    allowConnectionsWithoutCertificates: false\nreplication:\n  replSetName: rs0\nsecurity:\n  authorization: enabled\n  # clusterAuthMode: x509\n  keyFile: /keydir/key.txt\n"
+    description: "Content of the MongoDB config file"
+    type: multiline
+    required: true
+    label: configmap
