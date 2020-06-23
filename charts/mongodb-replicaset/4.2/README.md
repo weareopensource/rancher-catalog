@@ -1,4 +1,4 @@
-source : https://github.com/helm/charts/tree/master/stable/mongodb-replicaset
+source : <https://github.com/helm/charts/tree/master/stable/mongodb-replicaset>
 
 # MongoDB Helm Chart
 
@@ -212,7 +212,7 @@ alternative hostnames you want to allow access to the MongoDB replicaset. You sh
 mongodb with your `mongo.pem` certificate:
 
 ```console
-mongo --tls --tlsCAFile=ca.crt --tlsCertificateKeyFile=mongo.pem --eval "db.adminCommand('ping')"
+mongo --tls --tlsCAFile=ca.crt --tlsCertificateKeyFile=mongo.pem --tlsAllowInvalidCertificates
 ```
 
 ## Promethus metrics

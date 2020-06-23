@@ -26,7 +26,7 @@ questions:
     required: true
     label: persistentVolume.enabled
   - variable: auth.enabled
-    default: "true"
+    default: "false"
     description: "If `true`, auth is enabled."
     type: boolean
     required: true
