@@ -24,7 +24,7 @@ helm package charts/SERVICES/VERSION
 helm install WORKLOAD_NAME -f CONFIG.yaml ./SERVICES-VERSION.tgz
 ```
 
-## :pencil2: [Contribute](https://github.com/weareopensource/weareopensource.github.io/blob/master/CONTRIBUTE.md)
+## :pencil2: [Contribute](https://blog.weareopensource.me/how-to-contribute/)
 
 ## :globe_with_meridians: [We Are Open Source, Who we are ?](https://weareopensource.me)
 
