@@ -6,7 +6,7 @@ This project is a rancher catalog to simplify the initialization of certain tool
 
 ## :boom: Installation
 
-Rancher (interface) : 
+Rancher (interface) :
 
 * go in `Apps > Manage Catalog > Add Catalog`
 * configure name namespace and add url `https://github.com/weareopensource/rancher-catalog.git`
@@ -16,14 +16,13 @@ Rancher (interface) :
 ![config01](https://github.com/weareopensource/rancher-catalog/blob/master/images/config01.png?raw=true)
 ![config02](https://github.com/weareopensource/rancher-catalog/blob/master/images/config02.png?raw=true)
 
-Helm (command line) : 
+Helm (command line) :
 
 ```bash
 git clone https://github.com/weareopensource/rancher-catalog.git
-helm package charts/SERVICES/VERSION 
-helm install WORKLOAD_NAME -f CONFIG.yaml ./SERVICES-VERSION.tgz 
+helm package charts/SERVICES/VERSION
+helm install WORKLOAD_NAME -f CONFIG.yaml ./SERVICES-VERSION.tgz
 ```
-
 
 ## :pencil2: [Contribute](https://github.com/weareopensource/weareopensource.github.io/blob/master/CONTRIBUTE.md)
 
@@ -46,4 +45,4 @@ Feel free to help us ! :)
 
 ## :link: Links
 
-[![Blog](https://badges.weareopensource.me/badge/Read-our%20Blog-1abc9c.svg?style=flat-square)](https://weareopensource.me) [![Slack](https://badges.weareopensource.me/badge/Chat-on%20our%20Slack-d0355b.svg?style=flat-square)](https://join.slack.com/t/weareopensource/shared_invite/zt-62p1qxna-PEQn289qx6mmHobzKW8QFw) [![Discord](https://badges.weareopensource.me/badge/Chat-on%20our%20Discord-516DB9.svg?style=flat-square)](https://discord.gg/U2a2vVm)  [![Mail](https://badges.weareopensource.me/badge/Contact-us%20by%20mail-00a8ff.svg?style=flat-square)](mailto:weareopensource.me@gmail.com?subject=Contact)
+[![Blog](https://badges.weareopensource.me/badge/Read-our%20Blog-1abc9c.svg?style=flat-square)](https://blog.weareopensource.me) [![Slack](https://badges.weareopensource.me/badge/Chat-on%20our%20Slack-d0355b.svg?style=flat-square)](https://join.slack.com/t/weareopensource/shared_invite/zt-62p1qxna-PEQn289qx6mmHobzKW8QFw) [![Discord](https://badges.weareopensource.me/badge/Chat-on%20our%20Discord-516DB9.svg?style=flat-square)](https://discord.gg/U2a2vVm)  [![Mail](https://badges.weareopensource.me/badge/Contact-us%20by%20mail-00a8ff.svg?style=flat-square)](mailto:weareopensource.me@gmail.com?subject=Contact)
