@@ -25,7 +25,7 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
+    "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^8.3.4",
     "@weareopensource/conventional-changelog": "^1.6.0",
     "commitizen": "^4.1.2",
