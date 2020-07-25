@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/weareopensource/Swift.git"
+    "url": "https://github.com/weareopensource/rancher-catalog.git"
   },
   "engines": {
     "node": ">=9.11.2",
@@ -41,7 +41,6 @@
       }
     ],
     "ci": false,
-    "repositoryUrl": "https://github.com/pierrebrisorgueil/lou_node.git",
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
