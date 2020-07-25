@@ -23,6 +23,12 @@ git clone https://github.com/weareopensource/rancher-catalog.git
 helm package charts/SERVICES/VERSION
 helm install WORKLOAD_NAME -f CONFIG.yaml ./SERVICES-VERSION.tgz
 ```
+## :runner: Running Your Application
+
+### others
+
+* release : `npm run release -- --first-release` **standard version, changelog, tag & choose version number : -- --release-as 1.1.1**
+* release:auto : `GITHUB_TOKEN=XXXXX npm run release:auto` **semantic release, changelog, tag, release**
 
 ## :pencil2: [Contribute](https://blog.weareopensource.me/how-to-contribute/)
 
