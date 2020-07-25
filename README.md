@@ -28,7 +28,7 @@ helm install WORKLOAD_NAME -f CONFIG.yaml ./SERVICES-VERSION.tgz
 ### others
 
 * release : `npm run release -- --first-release` **standard version, changelog, tag & choose version number : -- --release-as 1.1.1**
-* release:auto : `GITHUB_TOKEN=XXXXX npm run release:auto` **semantic release, changelog, tag, release**
+* release:auto : `GITHUB_TOKEN=XXXXX npm run release:auto` **semantic release, changelog, tag, release** *require repositoryUrl conf in package.json*
 
 ## :pencil2: [Contribute](https://blog.weareopensource.me/how-to-contribute/)
 
