@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/weareopensource/rancher-catalog/compare/v1.0.0...v1.1.0) (2020-08-25)
+
+
+### Features
+
+* **mongodb:** upgrade to 4.4 ✨ ([2023f6b](https://github.com/weareopensource/rancher-catalog/commit/2023f6bbf661b1e61af917cb30d0a9c9e7715e08))
+
 # 1.0.0 (2020-07-25)
 
 
