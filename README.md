@@ -4,6 +4,13 @@
 
 This project is a rancher catalog to simplify the initialization of certain tools around our stacks. We wanted to use the official catalog or helm directly, unfortunately they are sometimes not up to date on the tools.
 
+Quick links :
+
+* [Mindset and what we would like to create](https://weareopensource.me/)
+* [How to start a project and maintain updates from stacks](https://blog.weareopensource.me/start-a-project-and-maintain-updates/)
+* [Global roadmap and  ideas about stacks](https://github.com/orgs/weareopensource/projects/3)
+* [How to contribute and help us](https://blog.weareopensource.me/how-to-contribute/)
+
 ## :boom: Installation
 
 Rancher (interface) :
